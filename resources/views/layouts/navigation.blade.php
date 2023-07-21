@@ -10,12 +10,21 @@
                     </a>
                 </div>
 
+               
+
                 <!-- Navigation Links -->
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
                     <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                         {{ __('Dashboard') }}
                     </x-nav-link>
                 </div>
+            </div>
+
+            <div class="flex flex-col justify-center">
+
+                <a href="{{route('ticket.create')}}" class="ml-3 bg-white rounded-lg p-2">
+                    Support Ticket
+                </a>
             </div>
 
             <!-- Settings Dropdown -->
